@@ -22,10 +22,11 @@ export const Skills = () => {
               sortedLanguageList().map((item, index) => (
                 <div className="skill-item" key={index}>
                   <p className="description"><strong>{item.language}</strong></p>
-                  <Circle
+                  {/* <Circle
                     animate
                     progress={converseCountToPercentage(item.count)}
-                  />
+                  /> */}
+                  <p className="description">リポジトリ数：{item.count}個</p>
                 </div>
               ))
             )
