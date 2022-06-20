@@ -1,5 +1,4 @@
 import { requestStates } from "../constants";
-import { Circle } from "react-circle";
 import { useSkills } from "../customHooks/useSkills";
 
 export const Skills = () => {
