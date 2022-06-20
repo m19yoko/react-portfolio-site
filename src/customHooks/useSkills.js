@@ -10,6 +10,7 @@ export const useSkills = () => {
     dispatch({ type: actionTypes.fetch })
     axios.get('https://api.github.com/users/m19yoko/repos')
       .then((response) => {
+        console.log(response.data);
         const languageList = response.data.map(res => res.language)
         const countedLanguageList = generateLanguageCountObj(languageList)
         dispatch({ type: actionTypes.success, payload: { languageList: countedLanguageList } });
