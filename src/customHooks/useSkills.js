@@ -32,13 +32,13 @@ export const useSkills = () => {
     })
   };
 
-  const converseCountToPercentage = (count) => {
-    if (count > 10) { return 100; }
-    return count * 10;
-  };
+  // const converseCountToPercentage = (count) => {
+  //   if (count > 10) { return 100; }
+  //   return count * 10;
+  // };
 
   const sortedLanguageList = () => (
     state.languageList.sort((firstLang, nextLang) => nextLang.count - firstLang.count)
   )
-  return [sortedLanguageList, state.requestState, converseCountToPercentage];
+  return [sortedLanguageList, state.requestState];
 }

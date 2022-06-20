@@ -2,7 +2,7 @@ import { requestStates } from "../constants";
 import { useSkills } from "../customHooks/useSkills";
 
 export const Skills = () => {
-  const [sortedLanguageList, fetchRequestState, converseCountToPercentage] = useSkills();
+  const [sortedLanguageList, fetchRequestState] = useSkills();
 
   return (
     <div id="skills">
