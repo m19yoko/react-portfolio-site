@@ -8,7 +8,7 @@ export const useSkills = () => {
 
   useEffect(() => {
     dispatch({ type: actionTypes.fetch });
-    axios.get('https://api.github.com/users/USER_NAME/repos')
+    axios.get('https://api.github.com/users/m19yoko/repos')
       .then((response) => {
         const languageList = response.data.map(res => res.language)
         const countedLanguageList = generateLanguageCountObj(languageList)
