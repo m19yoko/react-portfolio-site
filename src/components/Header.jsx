@@ -4,7 +4,6 @@ import ProfileImage from '../images/profile-image.png'
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Header = () => {
-  const componentName = () => 'Header';
   return (
     <header className='main-cover' style={{ backgroundImage: `url(${CoverImage})` }}>
       {/* overlayはカバー画像の上に透過して表示される背景要素 */}
